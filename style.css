@@ -1,0 +1,29 @@
+img{
+    width: 30px;
+    height: 30px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.sidebar{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-rows: 150px 250px;
+    background-color:blueviolet;
+    grid-row: 1/5;
+}
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    justify-items: center;
+}
+li{
+    list-style-type: none;
+}
