@@ -11,12 +11,15 @@ img{
     grid-template-columns: 1fr 5fr;
 }
 .sidebar{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: grid;
-    grid-template-rows: 150px 250px;
+    grid-template-rows: 150px 300px;
     background-color:blueviolet;
     grid-row: 1/5;
+}
+.sidebar>ul>li{
+    padding-bottom: 10px;
 }
 .logo{
     display: grid;
@@ -26,4 +29,7 @@ img{
 }
 li{
     list-style-type: none;
+}
+.main-logo{
+    height: 50px;
 }
