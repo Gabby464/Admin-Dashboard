@@ -1,137 +1,198 @@
-img{
+img {
     width: 30px;
     height: 30px;
 }
-*{
+
+:root {
+    --light-sea-green: #22aaa1ff;
+    --onyx: #393e41ff;
+    --terra-cotta: #e26d5aff;
+    --bone: #e5dcc5ff;
+    --vivid-sky-blue: #2bd9feff;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+* {
     padding: 0px;
     margin: 0px;
+    color:var(--onyx)
 }
-.main-container{
+
+.main-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
-.sidebar{
+
+.sidebar {
     padding-left: 15px;
     padding-right: 15px;
     display: grid;
     grid-template-rows: 150px 300px;
-    background-color:blueviolet;
+    background-color: var(--vivid-sky-blue);
     grid-row: 1/5;
 }
-.sidebar>ul>li{
+
+.sidebar>ul>li {
     padding-bottom: 10px;
     display: flex;
     align-items: center;
-    gap:5px;
+    gap: 5px;
+    font-size: 20px;
 }
-.logo{
+
+.logo {
     display: grid;
     grid-template-columns: 1fr 5fr;
     align-items: center;
     justify-items: center;
 }
-li{
+.logo>img, .user{
+    width: 40px;
+    height: 40px;
+}
+.logo > h1{
+    font-size: 40px;;
+}
+li {
     list-style-type: none;
 }
-.main-logo{
+
+.main-logo {
     height: 50px;
 }
 
-.header{
+.header {
     display: grid;
     grid-template-columns: minmax(auto, 4fr) 1fr;
     align-items: center;
     justify-items: start;
     padding: 10px;
-    background-color: rgb(213, 111, 111);
-   
-}
-.search-container{
-    display: flex;
 
 }
-#search-bar{
+
+.search-container {
+    display: flex;
+    gap: 10px;
+
+}
+
+#search-bar {
     width: 40vw;
     border-radius: 30px;
+    overflow-wrap: wrap;
 }
-.user-profile{
+
+.user-profile {
     display: flex;
     align-items: center;
     gap: 1vw;
 }
-.user{
-    background-color:rgba(255, 255, 255, .3);
-    box-shadow:-1px -1px 2px #fff;
-    border:1px solid rgba(255, 255, 255, .7);
-    border-radius:  50%;
+.user-profile > h3{
+    font-size:25px;
 }
-.menu{
+
+.user {
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: -1px -1px 2px #fff;
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 50%;
+
+}
+
+.menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
-    background-color: rgb(213, 111, 111);
 }
-.left-side{
+.header,
+.menu{
+    background-color: whitesmoke;
+
+    
+}
+.left-side {
     display: flex;
     align-items: center;
-    gap:1vw;
+    gap: 1vw;
 }
-.right-side > ul{
+
+.right-side>ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.right-side{
+
+.right-side {
     display: grid;
     align-items: center;
 }
-.right-side >ul >li>button{
-    width: 70px;
-    height: 30px;
+
+.right-side>ul>li>button {
+    width: 100px;
+    height: 40px;
     border-radius: 30px;
+    background-color: var(--terra-cotta);
+    font-size: 15px;
+    font-weight: bold;
 }
-.main-body{
+
+.main-body {
     display: grid;
     grid-template-columns: 5fr 2fr;
     gap: 10px;
     padding: 10px;
-    background-color: yellowgreen;
+    background-color: lightgray;
 }
-.icons{
+
+.icons {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 5px
 }
-.card{
+
+.card {
     padding: 10px;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap: 2em;
+    justify-content: space-between;
+    gap: 3em;
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 5px;
-    border-left: 10px solid #ef4444;
+    border-left: 10px solid var(--terra-cotta);
 }
-.article-cards{
+
+
+.article-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
-    
+
 }
-.announcements > ul,
-.trending > ul{
+
+.announcements>ul,
+.trending>ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
     border: solid black 1px;
     border-radius: 10px;
+    padding:10px
 }
-.side-content{
+.announcements>ul>li ,
+.trending>ul > li{
+    border-bottom: 1px solid lightgray;
+}
+.side-content {
     display: grid;
     grid-template-rows: 1 1;
     gap: 30px;
 }
-.side-container > h2{
+
+.side-container>h2 {
     padding-bottom: 20px;
+}
+.introduction{
+    font-size: 25px;
 }
