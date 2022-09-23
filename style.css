@@ -91,9 +91,10 @@ li{
 }
 .main-body{
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 5fr 2fr;
     gap: 10px;
     padding: 10px;
+    background-color: yellowgreen;
 }
 .icons{
     display: flex;
@@ -102,9 +103,14 @@ li{
     gap: 5px
 }
 .card{
-    border: solid 1px black;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: whitesmoke;
     padding: 5px;
     border-radius: 5px;
+    border-left: 10px solid #ef4444;
 }
 .article-cards{
     display: grid;
@@ -112,4 +118,20 @@ li{
     gap: 20px;
     padding: 20px;
     
+}
+.announcements > ul,
+.trending > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+.side-content{
+    display: grid;
+    grid-template-rows: 1 1;
+    gap: 30px;
+}
+.side-container > h2{
+    padding-bottom: 20px;
 }
