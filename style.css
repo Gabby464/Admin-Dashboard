@@ -33,3 +33,32 @@ li{
 .main-logo{
     height: 50px;
 }
+
+.header{
+    display: grid;
+    grid-template-columns: minmax(auto, 4fr) 1fr;
+    align-items: center;
+    justify-items: start;
+    padding: 10px;
+    background-color: rgb(213, 111, 111);
+   
+}
+.search-container{
+    display: flex;
+
+}
+#search-bar{
+    width: 40vw;
+    border-radius: 30px;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.user{
+    background-color:rgba(255, 255, 255, .3);
+    box-shadow:-1px -1px 2px #fff;
+    border:1px solid rgba(255, 255, 255, .7);
+    border-radius:  50%;
+}
