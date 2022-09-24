@@ -5,7 +5,7 @@ Admin Dashboard is the second project for the FullStack JavaScript module on The
 
 ### PC Layout
 ![Project Screenshot](https://github.com/Gabby464/Admin-Dashboard/blob/main/images/screenshots/Screenshot%202022-09-24%20194235.png)
-# Mobile Layout
+### Mobile Layout
 ![Project Screenshot](https://github.com/Gabby464/Admin-Dashboard/blob/main/images/screenshots/Screenshot%202022-09-24%20194423.png)![Project Screenshot](https://github.com/Gabby464/Admin-Dashboard/blob/main/images/screenshots/Screenshot%202022-09-24%20194459.png)
 
 ### Built With
